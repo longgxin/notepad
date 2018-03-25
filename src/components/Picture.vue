@@ -1,7 +1,7 @@
 <template>
     <v-container fluid grid-list-sm>
           <v-layout row wrap>
-            <v-flex xs4 v-for="pic in piclist" :key="pic.time">
+            <v-flex xs6 v-for="pic in piclist" :key="pic.time">
               <v-card>
                 <v-card-media  height="200px" :src=pic.imgurl @click.stop="showpic(pic)">
                 <v-spacer></v-spacer>

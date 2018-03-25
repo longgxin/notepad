@@ -96,17 +96,18 @@ const store = new Vuex.Store({
           Localstore.save(STORE_KEY2,newPost)
           state.textlist=newPost
           }else
-            state.textlist=Localstore.fetch(STORE_KEY2)||[]
+            state.textlist=[]
         }, function (error) {
           console.log(error);
         })
         ref.child(wilddog.auth().currentUser.uid+'/piclist').once('value', function(snapshot) {
           var newPost = snapshot.val();
+         // console.log(newPost)
           if(newPost!=null){
           Localstore.save(STORE_KEY3,newPost)
           state.piclist=newPost
           }else
-            state.piclist=Localstore.fetch(STORE_KEY3)||[]
+            state.piclist=[]
         }, function (error) {
           console.log(error);
         })
