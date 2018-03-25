@@ -48,8 +48,8 @@
             <v-card-actions>
               <v-spacer v-show="!loginstate"></v-spacer>
               <v-btn flat  color="primary" v-show="!loginstate" @click="changeloginflag(true)"><v-icon >cloud</v-icon>Log in</v-btn>
-              <v-btn flat  block color="primary" v-show="loginstate" @click="download"><v-icon >cloud_download</v-icon>Cloud Download</v-btn>
-              <v-btn flat  block color="primary" v-show="loginstate" @click="upload"><v-icon >cloud_upload</v-icon>Cloud Upload</v-btn>
+              <v-btn flat  block color="primary" v-show="loginstate" @click="download"><v-icon >cloud_download</v-icon>Download</v-btn>
+              <v-btn flat  block color="primary" v-show="loginstate" @click="upload"><v-icon >cloud_upload</v-icon>Upload</v-btn>
             </v-card-actions>
             <v-tabs icons-and-text grow fixed-tabs slider-color="primary" v-model="pagenum">
                <v-tab ><v-icon>description</v-icon></v-tab>
