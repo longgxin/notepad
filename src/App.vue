@@ -55,7 +55,8 @@
                <v-tab ><v-icon>description</v-icon></v-tab>
                <v-tab ><v-icon>image</v-icon></v-tab>
             </v-tabs>
-          <router-view/> 
+            <textshow v-show="pagenum==='0'"></textshow>
+            <Picture v-show="pagenum==='1'"></Picture>
           </v-flex>  
         </v-layout>
       </v-container>
@@ -76,6 +77,8 @@ import Textinput from './components/Textinput'
 import Picinput from './components/Picinput'
 import User from './components/User'
 import Picpreview from './components/Picpreview'
+import Textshow from './components/Text'
+import Picture from './components/Picture'
 import { mapState, mapMutations } from 'vuex'
 
 export default {
@@ -88,7 +91,7 @@ export default {
   },
   name: 'App',
   components:{
-    Textinput,Picinput,Picpreview,User
+    Textinput,Picinput,Picpreview,User,Textshow,Picture
   },
   mounted(){
     //this.$router.push('text')
@@ -103,16 +106,18 @@ export default {
   watch:{
     pagenum(){
       this.changepage(this.pagenum)
+      /*
       switch (this.pagenum) {
         case '0':
-          this.$router.push('text')
+          //this.$router.push('text')
           break
         case '1':
-          this.$router.push('pic')
+         // this.$router.push('pic')
           break
         default:
           break
       }
+      */
     }
   },
   methods:{
