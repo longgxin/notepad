@@ -1,3 +1,4 @@
+/*
 import Vue from 'vue'
 import Router from 'vue-router'
 import Text from '@/components/Text'
@@ -23,3 +24,4 @@ export default new Router({
     }
   ]
 })
+*/

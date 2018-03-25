@@ -205,7 +205,6 @@ const store = new Vuex.Store({
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
   store,
   components: { App },
   template: '<App/>',
