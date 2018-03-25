@@ -44,7 +44,7 @@
     <v-content>
       <v-container fluid fill-height>
         <v-layout>
-          <v-flex xs12 sm6 offset-sm3 mt-3>
+          <v-flex xs12 sm8 offset-sm2 mt-2 lg6 offset-lg3>
             <v-card-actions>
               <v-spacer v-show="!loginstate"></v-spacer>
               <v-btn flat  color="primary" v-show="!loginstate" @click="changeloginflag(true)"><v-icon >cloud</v-icon>Log in</v-btn>

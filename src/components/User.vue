@@ -68,7 +68,7 @@ export default {
         name:'',
         email:Localstore.fetch('USER').email||'',
         password:Localstore.fetch('USER').password||'',
-        photoURL:'/static/avatar-1.png',
+        photoURL:'./static/avatar-1.png',
       },
       login:true,
       signup:false,
